@@ -1,0 +1,35 @@
+<!DOCTYPE hmtl>
+<html>
+	<head>
+		<title>Treinando Idade</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		
+	</body>
+	<script>
+		var m=(prompt("Digite seu peso"))
+		var a=(prompt("Digite sua altura"))
+		var imc= m / (a^2)
+		alert("IMC: " + imc)
+		
+		if(imc >= 18.5 && imc < 25){
+			document.write("Parabéns! Voce esta no seu peso ideal")
+		}else 
+			if(imc <= 17 && imc <18.5){
+			document.write("Voce esta abaixo do peso")
+		}else 
+			if(imc == 25 && imc <=30){
+				document.write("Voce está sobrepeso")
+			}else 
+				if(imc > 30 && imc <= 35){
+					document.write("Voce  esta com obesidade")
+				}else
+					if(imc > 35 && imc<= 40){
+					   document.write("Voce esta com obesidade severa")
+					   }else{
+						   document.write("Voce esta com obsidade morbida")
+					   }
+				
+	</script>
+</html>
