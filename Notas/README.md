@@ -1,2 +1,2 @@
-# Projetos simples em HTML e CSS para testar meus conhecimentos.
+# Projeto de para cálculos de média escolar com um simples layout.
 
