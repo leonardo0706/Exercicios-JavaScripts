@@ -1,0 +1,150 @@
+<!Doctype html>
+<html>
+
+<head>
+    <title>Desafio 1</title>
+    <meta charset="utf-8">
+</head>
+
+<style>
+    * {
+        margin: 10px 10px;
+        padding: auto;
+    }
+    
+    body {
+        margin: auto;
+        padding: auto;
+        background: lightblue;
+        color: white;
+    }
+    
+    section {
+        position: absolute;
+        width: 47%;
+        height: 470px;
+        background: lightgray;
+        margin: 120px 300px 0px 300px;
+        background-image: url(https://image.freepik.com/vetores-gratis/textura-de-fundo-escolar-lousa-com-vetor-de-quadro_97886-168.jpg);
+    }
+    
+    input {
+        padding: 5px;
+        margin: 0px 200px;
+    }
+    
+    #n1 {
+        margin: 60px 307px;
+        font-weight: bold;
+    }
+    
+    #n2 {
+        margin: -70px 305px;
+        font-weight: bold;
+    }
+    
+    #n3 {
+        margin: 60px 305px;
+        font-weight: bold;
+    }
+    
+    #n4 {
+        margin: -70px 305px;
+        font-weight: bold;
+    }
+    
+    #nota1 {
+        margin: 2px -60px;
+    }
+    
+    #nota2 {
+        margin: 2px -60px;
+    }
+    
+    #nota3 {
+        margin: 2px -60px;
+    }
+    
+    #nota4 {
+        margin: 2px -60px;
+    }
+    
+    button {
+        position: relative;
+        padding: 5px;
+        margin: 80px 305px;
+    }
+    
+    #resposta {
+        margin: 65px 10px 0px 20px;
+    }
+</style>
+
+<script>
+    function calcula_media() {
+
+        var nota1 = parseFloat(document.getElementById("nota1").value)
+
+        while (nota1 > 10 || nota1 < 0 || nota1 == "" || isNaN(nota1)) {
+            alert("Digite uma  nota válida")
+            return false;
+        }
+
+        var nota2 = parseFloat(document.getElementById("nota2").value)
+
+        while (nota2 > 10 || nota2 < 0 || nota2 == "" || isNaN(nota2)) {
+            alert("Digite uma  nota válida")
+            return false
+        }
+
+        if (nota1 > nota2) {
+            nota_maior = nota1
+        } else {
+            nota_maior = nota2
+        }
+
+        var nota3 = parseFloat(document.getElementById("nota3").value)
+
+        while (nota3 > 10 || nota3 < 0 || nota3 == "" || isNaN(nota3)) {
+            alert("Digite uma  nota válida")
+            return false
+        }
+
+        var nota4 = parseFloat(document.getElementById("nota4").value)
+
+        while (nota4 > 10 || nota4 < 0 || nota4 == "" || isNaN(nota4)) {
+            alert("Digite uma  nota válida")
+            return false
+        }
+
+        var media = (nota_maior + nota3 + nota4) / 3
+
+        resposta.innerHTML = `<h1> As notas utilizadas para calcular sua média foram ${nota_maior}, ${nota3} e  ${nota4}</h1> <h1>Sua média foi <strong>${media}</strong></h1>`
+
+        if (media <= 5) {
+            resposta.innerHTML += `<h1 style="color: red; font-weight: bold";>REPROVADO. QUE PENA!!!</h1>`
+        } else
+        if (media > 5 && media < 7) {
+            resposta.innerHTML += `<h1 style="color: blue; font-weight: bold;">RECUPERAÇÃO, FOI POR POUCO!!!</h1>`
+        } else {
+            resposta.innerHTML += `<h1 style="color: green; font-weight: bold;">APROVADO, VALEU O ESFORÇO!!!</h1>`
+        }
+
+    }
+</script>
+
+<body>
+
+    <section>
+        <p id="n1">1ºNota <input type="number" id="nota1"></p><br>
+        <p id="n2">2ºNota<input type="number" id="nota2"></p><br>
+        <p id="n3">3ºNota<input type="number" id="nota3"></p><br>
+        <p id="n4">4ºNota<input type="number" id="nota4"></p><br>
+
+        <div id="resposta"></div>
+        <button onclick="calcula_media();">Enviar</button>
+
+    </section>
+</body>
+
+</html>
