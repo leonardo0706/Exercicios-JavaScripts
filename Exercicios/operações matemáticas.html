@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<title>
+Javascript
+</title>
+<meta charset="utf-8">
+<style>
+body
+{
+background-color: #000;
+color:#fff;
+font-size:2em;
+margin-left: 40px;
+font-family: sans-serif, arial, helvetica;
+}
+</style>
+<script type="text/javascript">
+/* --------------------------------------------*/
+/* Programa para mostrar o funcionamento dos */
+/* Operadores Aritméticos do JavaScript */
+/* Observe que há um erro na realização da Soma */
+/* Pense: Qual o motivo de este erro ocorrer? */
+/* Resolvido: Usamos a função interna parseInt para transformar a variável string em
+número inteiro e parseFloat para transformar a variável em número com casa flutuante
+exemplo: 4.30!! */
+/* --------------------------------------------*/
+/* ---- Declarando variáveis ----*/
+var a=parseFloat(window.prompt("Digite um primeiro número (aceita casa decimal):",""));
+var b=parseFloat(window.prompt("Digite um segundo número (aceita casa decimal):",""));
+var result;
+/* ---- Calculando e exibindo ----*/
+document.write("Os valores escolhidos por você foram:<p>Primeiro Valor: " + a + "<p>Segundo Valor: " + b + "<p>Os resultados das contas com estes números são:<p>");
+result= a + b;
+document.write("Soma: " + result + "<br>");
+result= a - b;
+document.write("Subtração: " + result + "<br>");
+result= a * b;
+document.write("Multiplicação: " + result + "<br>");
+result= a / b;
+document.write("Divisão: " + result + "<br>");
+result= a % b;
+document.write("Resto: " + result + "<br>");
+</script>
+</head>
+<body>
+</body>
+</html>

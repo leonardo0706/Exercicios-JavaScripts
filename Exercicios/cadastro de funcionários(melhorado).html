@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<title>
+Javascript
+</title>
+<meta charset="utf-8">
+<style>
+body
+{
+background-color: #000;
+color:#fff;
+font-size:2em;
+margin-left: 40px;
+font-family: sans-serif, arial, helvetica;
+}
+</style>
+<script type="text/javascript">
+/* ---- Inicialização das Variáveis ----*/
+var nome=window.prompt("Digite o nome", "");
+var cargo=window.prompt("Qual é o seu cargo "+ nome +"?","");
+var depart=window.prompt("ocupa o cargo de " + cargo + " em qual departamento?", "");
+var Setor=window.prompt("Qual é o seu setor", "");
+var salario=window.prompt("Qual é o seu salário", "");
+var vale=salario*40/100;
+var fgts=salario*8/100;
+var poupa=salario*20/100;
+var cemanos=poupa*1200;
+/* ---- Exibindo os Resultados ----*/
+document.write("Nome: "+nome+"<p>");
+document.write("Cargo: "+cargo+"<p>");
+document.write("Departamento: "+depart+" e ");
+document.write("Setor: "+Setor+"</p>");
+document.write("Salário: "+"R$ "+salario+"<p>");
+document.write("Vale: "+"R$ "+vale+"<p>");
+document.write("FGTS: "+"R$ "+fgts+"<p>");
+document.write("Poupança por mês: "+"R$ "+poupa+"<p>");
+document.write("Poupança em cem anos: "+"R$ "+cemanos+"<p>");
+</script>
+</head>
+<body>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<title>
+Javascript
+</title>
+<meta charset="utf-8">
+<style>
+body
+{
+background-color: #000;
+color:#fff;
+font-size:2em;
+margin-left: 40px;
+font-family: arial, helvetica;
+}
+</style>
+<script type="text/javascript">
+/* --------------------------------------------*/
+/* Programa para mostrar o funcionamento dos */
+/* Operadores Aritméticos do JavaScript */
+/* Observe que há um erro na realização da Soma */
+/* Pense: Qual o motivo de este erro ocorrer? */
+/* Resolvido: Usamos a função interna parseInt para transformar a variável string em
+número inteiro e parseFloat para transformar a variável em número com casa flutuante
+exemplo: 4.30!!
+Exercício: formate os textos que aparecem na tela com HTML concatenado com
+Javascript (textos coloridos)
+DESAFIO: VALIDE AS DEMAIS NOTAS DO SISTEMA !! :-)
+*/
+/* --------------------------------------------*/
+/* ---- Declarando variáveis ----*/
+var nota1=parseFloat(window.prompt("entre com a nota do 1º bimestre", ""));
+/* ---- Criando a validação da nota 1 com while (loop enquanto), operadores relacionais ----
+*/
+while(nota1>10||nota1<0||nota1==""||isNaN(nota1))
+{
+window.alert("digite uma nota correta seu bobão!!")
+var nota1=parseFloat(window.prompt("entre com a nota do 1º bimestre", ""));
+}
+    
+var nota2=parseFloat(window.prompt("entre com a nota do 2º bimestre", ""));
+
+while(nota2>10||nota2<0||nota2==""||isNaN(nota2))
+{
+window.alert("digite uma nota correta seu bobão!!")
+var nota2=parseFloat(window.prompt("entre com a nota do 2° bimestre", ""));
+}
+    
+var nota3=parseFloat(window.prompt("entre com a nota do 3º bimestre", ""));
+    
+while(nota3>10||nota3<0||nota3==""||isNaN(nota3))
+{
+window.alert("digite uma nota correta seu bobão!!")     
+var nota3=parseFloat(window.prompt("entre com a nota do 3° bimestre", ""));    
+ }
+    
+var nota4=parseFloat(window.prompt("entre com a nota do 4º bimestre", ""));
+    
+while(nota4>10||nota4<0||nota4==""||isNaN(nota4))    
+{
+window.alert("digite uma nota correta seu bobão!!")
+var nota4=parseFloat(window.prompt("entre com a nota do 4° bimestre", ""));    
+}
+    
+var media=(nota1+nota2+nota3+nota4)/4;
+/* ---- Exibindo os Resultados - Formate colorido----*/
+document.write("Nota1: "+nota1+"<br>");
+document.write("Nota2: "+nota2+"<br>");
+document.write("Nota3: "+nota3+"<br>");
+document.write("Nota4: "+nota4+"<br>");
+document.write("Média: "+media+"<br>");
+</script>
+</head>
+<body>
+</body>
+</html>

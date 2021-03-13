@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head> 
+  <title> 
+      Javascript 
+  </title>
+  <meta charset="utf-8">
+ 
+<style> 
+    body
+      {
+         background-color: #000;
+         color:#fff;
+         font-size:2em;
+         margin-left: 40px;
+         font-family: sans-serif, arial, helvetica;
+      }
+    
+  </style>
+  
+<script type="text/javascript">
+
+/* ---- Declarar se o nº é par ou impar ----*/
+
+var num=window.prompt("digite um número qualquer",  "");
+
+var num=parseInt(num);
+    
+while(isNaN(num))
+    {
+        
+        window.alert("digite um número verdadeiro");
+        var num=window.prompt("digite um número qualquer",  "");
+        var num=parseInt(num);
+    }
+    
+
+if(num%2==0)//é par
+    {
+        window.alert("o número: " +num+ "\n É par");  //  usamos  \n  para quebra de linha
+    }
+else//é impar
+    {
+        window.alert("o número: " +num+ "\n É impar");
+    }
+
+window.alert("obrigado por utilizar nosso sistema!!!");
+
+
+</script>
+
+</head>
+<body>
+
+
+
+
+</body>
+</html>

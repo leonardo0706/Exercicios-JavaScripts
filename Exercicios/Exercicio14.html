@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+    <title>Testes de JavaScript</title>
+
+    <style> 
+    body
+      {
+         background-color: #000;
+         color:#fff;
+         font-size:2em;
+         margin-left: 40px;
+         font-family: sans-serif, arial, helvetica;
+      }
+    
+    
+  </style>
+    
+<script>
+    var texto1 = "10";
+    var texto2 = "458.78";
+    var msg = "10ursos";
+    var msg2 = "10.523 parsecs";
+    var nome = "João Balão";
+    var texto = "alert('Olá Amigos')";
+    
+     eval(texto); // executa o comando contido em texto
+    a = parseInt(texto1); // retorna o número 10
+    document.write("O resultado da função interna  a = parseInt(texto1) é "+a+"<p>");
+    b = parseFloat(texto2); // retorna o número 458.78
+    document.write("O resultado da função interna parseFloat(texto2); é "+b+"<p>");
+    c = parseInt(texto2); // retorna o número 458
+    document.write("O resultado da função interna parseInt(texto2); é "+c+"<p>");
+    d = a + c; // retorna o número 468
+    document.write("O resultado co cálculo d = a + c; é "+d+"<p>");
+    e = parseInt(nome); // retorna NaN
+    document.write("O resultado da função interna e = parseInt(nome); é "+e+"<p>");
+    f = escape(nome) ; // retorna Jo%E3o%20Bal%E3o
+    document.write("O resultado da função interna  f = escape(nome); é "+f+"<p>");
+    g = unescape(f); // retorna João Balão
+    document.write("O resultado da função interna  g = unescape(f); é "+g+"<p>");
+    h = parseInt(msg); // retorna o número 10
+    document.write("O resultado da função interna é h = parseInt(msg); é "+h+"<p>");
+    i = parseFloat(msg2); // retorna o número 10.523document.write("o resultado da função interna é"+h+"<br>);
+    document.write("O resultado da função interna é  i = parseFloat(msg2); é "+i+"<br>");
+    
+  
+  </script>
+
+
+</head>
+<body>
+
+
+
+</body>
+</html> 

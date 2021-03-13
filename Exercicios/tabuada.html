@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>	
+    <style> 
+        body
+        {
+         background-color: #000;
+         color:#fff;
+         font-size:2em;
+         margin-left: 40px;
+         font-family: sans-serif, arial, helvetica;
+        }
+    </style>
+    <title>Tabuada 1 ao 10</title>
+	<script>
+        
+         function executarTabuada()
+        {
+            var numeroEntrada = document.getElementById("numeroEntrada").value;
+            var numeroEntrada = parseInt(numeroEntrada);
+        
+           
+            var resposta = document.getElementById('resposta');
+            var calculoTabuada='';
+            
+            while(numeroEntrada <0 || numeroEntrada >10 || isNaN(numeroEntrada)){
+                alert("Digite um numero valido");
+                return;
+            }
+
+            for(var i=1; i<=10 ; i++)
+                {
+                    calculoTabuada += numeroEntrada +" x " + i+ " = "+ numeroEntrada*i + "<br />";
+                }
+            
+            resposta.innerHTML = calculoTabuada;
+        }
+   </script>
+	
+       
+    
+</head>
+<body>
+	
+    Digite um número de 1 a 10 para calcular a tabuada: <p>
+    
+    <input id="numeroEntrada" type="number"> <p>
+    
+    <button onclick="executarTabuada()">Exibir</button>
+    <p>
+    Resultado da Tabuada: 
+    <br>
+    <p id='resposta' style='display:inline;color:#ff0000;font-weight: 900;font-size:2rem;'></p>
+ </body>
+	
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head> 
+  <title> 
+      Javascript 
+  </title>
+  <meta charset="utf-8">
+ 
+    <style> 
+        body
+        {
+         background-color: #000;
+         color:#fff;
+         font-size:2em;
+         margin-left: 40px;
+         font-family: sans-serif, arial, helvetica;
+        }
+    </style>
+  
+    <script type="text/javascript">
+
+    do //faça todo o bloco abaixo
+    {
+        var num=parseInt(window.prompt("digite um número qualquer", ""));
+		
+        if(num%2==0)//é par
+        {
+            window.alert("o número: " +num+ "\nÉ par");
+        }
+        else//é impar
+        {
+            window.alert("o número: " +num+ "\nÉ impar")
+        }
+        
+        resp=window.prompt("deseja testar outro número?", "S ou N");
+        document.write("O número testado foi: " + num +"<br>");
+    }
+    
+    while(resp.toUpperCase()=="S")//enquanto isto for verdade
+
+    window.alert("Obrigado pela utilização do nosso sistema!!");
+
+    </script>
+
+</head>
+<body>
+
+
+
+
+</body>
+</html>

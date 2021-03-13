@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-size: 2em;
+            margin-left: 40px;
+            font-family: sans-serif, arial, helvetica;
+        }
+    </style>
+    <title>Array</title>
+    <script>
+        //criando um array com 4 posições
+
+        var fruta = new Array(4) //de 0 a 4
+
+        //entrando com os dados
+
+        for (n = 0; n <= 4; n = n + 1) {
+            fruta[n] = window.prompt("digite o nome de uma fruta", "");
+        }
+
+        //exibindo os dados
+        document.write("Estas foram as " + fruta.length + " frutas digitadas:<p>");
+        for (n = 0; n <= 4; n = n + 1) {
+            document.write(n + "-" + fruta[n] + "<br>");
+        }
+    </script>
+
+
+
+</head>
+
+<body>
+
+</body>
+
+</html>

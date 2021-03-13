@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>	
+    <style> 
+        body
+        {
+         background-color: #000;
+         color:#fff;
+         font-size:2em;
+         margin-left: 40px;
+         font-family: sans-serif, arial, helvetica;
+        }
+    </style>
+    <title>length</title>
+	<script>
+
+/* Aprendendo a utilizar o .length */
+
+/*A propriedade length (comprimento) tem como responsabilidade retornar a quantidade de caracteres de uma string ou o tamanho de um array (matriz). */
+        
+        
+var cpfExemplo=window.prompt("digite o número de seu cpf completo: Exemplo: 235.568.958-60");
+  
+        while (cpfExemplo.length != 14)
+        {
+            window.alert("CPF digitado de forma Incorreta");
+            var cpfExemplo=window.prompt("digite o número de seu cpf completo: Exemplo: 235.568.958-60");
+        } 
+        
+        window.alert("Seu CPF está correto!");
+        document.write("O CPF Digitado foi: "+ cpfExemplo +"<p>");
+        document.write("O CPF Digitado possui "+ cpfExemplo.length +" caracteres!!");
+	
+    </script>      
+    
+</head>
+<body>
+	
+</body>
+	
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testes de JavaScript</title>
+    <script>
+    
+    
+        function calcular() 
+        {
+            var txtvel = document.getElementById('txtvel');
+            var vel = Number(txtvel.value);
+            resultado.innerHTML = `Sua velocidade é de <strong>${vel} Km/h</strong>`;
+            if (vel > 120) {
+                resultado.innerHTML += '<p>Você foi <strong>multado</strong> por <strong>excesso</strong> de velocidade!</p>';
+    
+            }
+            else
+                {
+                resultado.innerHTML += '<p>Você permaneceu no limite de velocidade. Use sempre o cinto de segurança!</p>';
+                }
+                        
+        }
+
+     
+    </script>
+    
+</head>
+<body>
+  <!--  <div id="area">
+    interaja...
+    </div> -->
+
+<h1>Sistema de cálculos</h1>
+    
+<div class="condiçoes">
+    <h2>Verifique sua velocidade e se foi multado</h2>
+</div>
+<div>
+    <input type="number" name="txtvel" id="txtvel">
+    <input type="button" value="verificar" onclick="calcular()">
+</div>
+<div id="resultado"></div>
+</body>
+</html> 

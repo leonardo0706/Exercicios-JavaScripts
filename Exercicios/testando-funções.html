@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+    <title>Testes de JavaScript</title>
+
+    <style> 
+    body
+      {
+         font-size:2em;
+         margin-left: 40px;
+         font-family: sans-serif, arial, helvetica;
+          text-align: center;
+      }
+     input
+        {
+            background-color: #F00;
+            width:400px;
+            height: 100px;
+        }
+    
+  </style>
+    
+<script>
+    
+    var nome=window.prompt("digite seu nome aqui");
+    
+    function mensagem()
+    {
+        window.alert("Bom dia!!"+nome)
+        window.alert("É muito bom ter você aqui!!!")
+    }
+
+  </script>
+
+
+</head>
+<body>
+<h2 align=center>Chamando funções</h2>
+
+<a href="javascript:mensagem()">Chamando por um link</a><br><br>
+
+<input type="button" value="Chamando por evento com onClick" onClick="mensagem();"><br><br>
+
+<input type="button" value="Chamando por evento com onMouseOver" onMouseOver="mensagem();"><br>
+
+
+
+</body>
+</html> 
